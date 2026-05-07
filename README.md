@@ -27,4 +27,7 @@ Make sure to connect all wires before switching on the power. The VGA cable is i
 
 For any source, you should see a central peak, and a symmetrical intensity profile either side, e.g for a 265nm LED, this means peaks at -11.2, 0, +11.2 corresponding to the m=0 central peak, and m=1 peaks either side. Alignment of the optics affects intensity of the peaks a LOT. Make sure to do a rough scan across your data taking region to see if the intensity suits your purposes. There is an offset to this distribution based on variations in the angle the grating was installed at, so you'll see a horizontal shift in the distribution (when calibrating, this was +1.5, so the 265nm LED peaks were at -9.7, +1.5, +12.7). this offset can be changed with a knob at the top of the grating controller in the central chamber, so you can recalibrate it to 0 offset.
 
+
+if you run into any other issues with any of this, you can email me mehansadias9@gmail.com
+
 Having tried irises and wratten filter 18B (filters out visible light, lets through 250-300nm), neither reduced artefacts significantly. Filters reduced total intensity, but artefacts remained. This suggests they're caused by reflections in the chamber or internal effects. Taking readings with a blue LED showed the same artefacts, so we know they're not caused by diffraction (diffraction orders for blue wouldn't be visible).  
