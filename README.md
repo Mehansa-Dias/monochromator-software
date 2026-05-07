@@ -2,8 +2,8 @@ The Xeryon Python Library:
 Contains the Protocols the encoder controlling the grating uses to communicate with the computer. The Xeryon.py file contains all the protocols for all such devices so check this if there's any fundamental issues with connections. All the control code for our monochromator is implemented in 'monochrom_control_code_draft.py' in 'ourGUI'.
 
 If you've got any issues with your control code trying to find the Xeryon.py file, we managed to fix it by putting it directly in our python site packages (probably not best practice, but it works). 
-in Command Prompt, follow these steps:
-1. python -m site
+follow these steps:
+1. in Command Prompt type,  python -m site
 2. Find and go to directory ending in .../Lib/site-packages
 3. Copy the Xeryon.py file into this directory
 
