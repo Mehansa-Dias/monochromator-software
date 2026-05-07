@@ -21,13 +21,13 @@ This has the code controlling the Keithley picoammeter and the monochromator for
 
 THE MONOCHROMATOR:
 
-The screeching on startup is apparently normal, and nothing to worry about. If the software can't find the axis for the encoder, this usually means the grating controller is getting stuck or caught on something. You can open the central chamber to check, but this shouldn't be an issue after the wiring is moved and secured for the final setup. 
+The screeching on startup is apparently normal, and nothing to worry about. If the software can't find the axis for the encoder, this usually means the grating controller is getting stuck or caught on something. You can open the central chamber to check, but this shouldn't be an issue after the wiring is moved and secured for the final setup. The smallest increment the grating moves at is 0.01 degrees.
 
 Make sure to connect all wires before switching on the power. The VGA cable is important, make sure it's not screwed on loose because if it is, the angle output to the encoder will be wrong. Both slits go down to a resolution of 0.01mm and can open up to >7mm. Have them as narrow as possible for data taking (especially the exit slit, having it at 0.01mm gave the best peaks with minimal optical artefacts). Bright and diffuse sources work best for consistent output. 
 
 For any source, you should see a central peak, and a symmetrical intensity profile either side, e.g for a 265nm LED, this means peaks at -11.2, 0, +11.2 corresponding to the m=0 central peak, and m=1 peaks either side. Alignment of the optics affects intensity of the peaks a LOT. Make sure to do a rough scan across your data taking region to see if the intensity suits your purposes. There is an offset to this distribution based on variations in the angle the grating was installed at, so you'll see a horizontal shift in the distribution (when calibrating, this was +1.5, so the 265nm LED peaks were at -9.7, +1.5, +12.7). this offset can be changed with a knob at the top of the grating controller in the central chamber, so you can recalibrate it to 0 offset.
 
+Having tried irises and wratten filter 18B (filters out visible light, lets through 250-300nm), neither reduced artefacts significantly. Filters reduced total intensity, but artefacts remained. This suggests they're caused by reflections in the chamber or internal effects. Taking readings with a blue LED showed the same artefacts, so we know they're not caused by diffraction (diffraction orders for blue wouldn't be visible). 
+
 
 if you run into any other issues with any of this, you can email me mehansadias9@gmail.com
-
-Having tried irises and wratten filter 18B (filters out visible light, lets through 250-300nm), neither reduced artefacts significantly. Filters reduced total intensity, but artefacts remained. This suggests they're caused by reflections in the chamber or internal effects. Taking readings with a blue LED showed the same artefacts, so we know they're not caused by diffraction (diffraction orders for blue wouldn't be visible).  
